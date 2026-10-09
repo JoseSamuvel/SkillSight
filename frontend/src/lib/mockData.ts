@@ -1,0 +1,291 @@
+// Mock data for KaushalLens AI - Labour Market Intelligence Platform
+
+export const mockDistricts = [
+  { id: 'd1', name: 'Coimbatore', state: 'Tamil Nadu', lat: 11.0168, lng: 76.9558, healthScore: 72, demandGrowth: 18, supplyGrowth: 7, riskLevel: 'HIGH', workforce: 850000 },
+  { id: 'd2', name: 'Chennai', state: 'Tamil Nadu', lat: 13.0827, lng: 80.2707, healthScore: 65, demandGrowth: 22, supplyGrowth: 14, riskLevel: 'HIGH', workforce: 2200000 },
+  { id: 'd3', name: 'Hosur', state: 'Tamil Nadu', lat: 12.7409, lng: 77.8253, healthScore: 58, demandGrowth: 31, supplyGrowth: 9, riskLevel: 'CRITICAL', workforce: 320000 },
+  { id: 'd4', name: 'Madurai', state: 'Tamil Nadu', lat: 9.9252, lng: 78.1198, healthScore: 78, demandGrowth: 12, supplyGrowth: 10, riskLevel: 'MEDIUM', workforce: 680000 },
+  { id: 'd5', name: 'Tiruchirappalli', state: 'Tamil Nadu', lat: 10.7905, lng: 78.7047, healthScore: 81, demandGrowth: 9, supplyGrowth: 11, riskLevel: 'LOW', workforce: 420000 },
+  { id: 'd6', name: 'Tirunelveli', state: 'Tamil Nadu', lat: 8.7139, lng: 77.7567, healthScore: 69, demandGrowth: 24, supplyGrowth: 8, riskLevel: 'HIGH', workforce: 290000 },
+  { id: 'd7', name: 'Bengaluru', state: 'Karnataka', lat: 12.9716, lng: 77.5946, healthScore: 61, demandGrowth: 28, supplyGrowth: 18, riskLevel: 'HIGH', workforce: 3100000 },
+  { id: 'd8', name: 'Mysuru', state: 'Karnataka', lat: 12.2958, lng: 76.6394, healthScore: 74, demandGrowth: 15, supplyGrowth: 12, riskLevel: 'MEDIUM', workforce: 430000 },
+  { id: 'd9', name: 'Pune', state: 'Maharashtra', lat: 18.5204, lng: 73.8567, healthScore: 67, demandGrowth: 26, supplyGrowth: 16, riskLevel: 'HIGH', workforce: 1800000 },
+  { id: 'd10', name: 'Mumbai', state: 'Maharashtra', lat: 19.0760, lng: 72.8777, healthScore: 63, demandGrowth: 20, supplyGrowth: 15, riskLevel: 'HIGH', workforce: 4200000 },
+  { id: 'd11', name: 'Nagpur', state: 'Maharashtra', lat: 21.1458, lng: 79.0882, healthScore: 79, demandGrowth: 11, supplyGrowth: 9, riskLevel: 'LOW', workforce: 680000 },
+  { id: 'd12', name: 'Salem', state: 'Tamil Nadu', lat: 11.6643, lng: 78.1460, healthScore: 71, demandGrowth: 19, supplyGrowth: 11, riskLevel: 'MEDIUM', workforce: 380000 },
+];
+
+export const mockOccupations = [
+  { id: 'o1', ncoCode: '7421', title: 'Solar PV Technician', sector: 'Renewable Energy', nsqfLevel: 4, demand: 7200, supply: 3800, gap: 3400, trend: 'RISING', confidence: 88 },
+  { id: 'o2', ncoCode: '7231', title: 'EV Technician', sector: 'Automotive', nsqfLevel: 4, demand: 6500, supply: 2900, gap: 3600, trend: 'RISING', confidence: 91 },
+  { id: 'o3', ncoCode: '7412', title: 'Industrial Electrician', sector: 'Manufacturing', nsqfLevel: 5, demand: 5800, supply: 3200, gap: 2600, trend: 'STABLE', confidence: 84 },
+  { id: 'o4', ncoCode: '7223', title: 'CNC Machine Operator', sector: 'Manufacturing', nsqfLevel: 4, demand: 4900, supply: 2100, gap: 2800, trend: 'RISING', confidence: 82 },
+  { id: 'o5', ncoCode: '2151', title: 'AI/ML Engineer', sector: 'IT/Digital', nsqfLevel: 7, demand: 8200, supply: 4100, gap: 4100, trend: 'SURGING', confidence: 79 },
+  { id: 'o6', ncoCode: '3511', title: 'Data Analyst', sector: 'IT/Digital', nsqfLevel: 6, demand: 6800, supply: 4200, gap: 2600, trend: 'RISING', confidence: 86 },
+  { id: 'o7', ncoCode: '7111', title: 'Welder', sector: 'Manufacturing', nsqfLevel: 3, demand: 3200, supply: 3800, gap: -600, trend: 'STABLE', confidence: 89 },
+  { id: 'o8', ncoCode: '9211', title: 'Data Entry Operator', sector: 'IT/Digital', nsqfLevel: 2, demand: 1800, supply: 4200, gap: -2400, trend: 'DECLINING', confidence: 92 },
+  { id: 'o9', ncoCode: '7422', title: 'Wind Turbine Technician', sector: 'Renewable Energy', nsqfLevel: 4, demand: 3100, supply: 1200, gap: 1900, trend: 'RISING', confidence: 76 },
+  { id: 'o10', ncoCode: '7521', title: 'Food Processing Operator', sector: 'Food & Agriculture', nsqfLevel: 3, demand: 4200, supply: 3100, gap: 1100, trend: 'STABLE', confidence: 83 },
+];
+
+export const mockNationalStats = {
+  totalSkillShortage: 2800000,
+  totalOversupply: 1400000,
+  emergingSkills: 137,
+  saturatedOccupations: 82,
+  highRiskDistricts: 94,
+  trainingCentres: 14200,
+  activeLearners: 890000,
+  placementRate: 68,
+  avgConfidence: 84,
+  gdpImpact: 2.8,
+  statesMonitored: 28,
+  districtsAnalyzed: 724,
+};
+
+export const mockForecastData = [
+  { period: 'Q1 2025', demand: 42000, supply: 31000, gap: 11000 },
+  { period: 'Q2 2025', demand: 45000, supply: 32500, gap: 12500 },
+  { period: 'Q3 2025', demand: 48000, supply: 33000, gap: 15000 },
+  { period: 'Q4 2025', demand: 51000, supply: 33500, gap: 17500 },
+  { period: 'Q1 2026', demand: 55000, supply: 34000, gap: 21000 },
+  { period: 'Q2 2026', demand: 58000, supply: 35000, gap: 23000 },
+  { period: 'Q3 2026', demand: 62000, supply: 36000, gap: 26000 },
+  { period: 'Q4 2026', demand: 67000, supply: 37000, gap: 30000 },
+  { period: 'Q1 2027', demand: 72000, supply: 38500, gap: 33500, forecast: true },
+  { period: 'Q2 2027', demand: 78000, supply: 39000, gap: 39000, forecast: true },
+  { period: 'Q3 2027', demand: 84000, supply: 40000, gap: 44000, forecast: true },
+  { period: 'Q4 2027', demand: 90000, supply: 41500, gap: 48500, forecast: true },
+];
+
+export const mockSectorData = [
+  { sector: 'Renewable Energy', gap: 28400, growth: 31, risk: 'CRITICAL', color: '#f97316' },
+  { sector: 'EV/Automotive', gap: 24200, growth: 28, risk: 'HIGH', color: '#ef4444' },
+  { sector: 'IT/Digital', gap: 41000, growth: 22, risk: 'HIGH', color: '#8b5cf6' },
+  { sector: 'Manufacturing', gap: 18600, growth: 15, risk: 'MEDIUM', color: '#eab308' },
+  { sector: 'Healthcare', gap: 12400, growth: 18, risk: 'MEDIUM', color: '#22c55e' },
+  { sector: 'Food Processing', gap: 8900, growth: 8, risk: 'LOW', color: '#06b6d4' },
+];
+
+export const mockSkillEmergingData = [
+  { skill: 'AI-Assisted Industrial Inspection', growth: 284, sectors: ['Manufacturing', 'Energy'], stage: 'EMERGING' },
+  { skill: 'EV Battery Management', growth: 241, sectors: ['Automotive', 'Energy'], stage: 'EMERGING' },
+  { skill: 'Solar-Storage Integration', growth: 198, sectors: ['Renewable Energy'], stage: 'GROWING' },
+  { skill: 'IoT Predictive Maintenance', growth: 172, sectors: ['Manufacturing', 'Logistics'], stage: 'GROWING' },
+  { skill: 'Digital Twin Operation', growth: 156, sectors: ['Manufacturing', 'Construction'], stage: 'GROWING' },
+  { skill: 'PLC Programming', growth: 134, sectors: ['Manufacturing'], stage: 'ESTABLISHED' },
+  { skill: 'Drone Operation & Inspection', growth: 128, sectors: ['Agriculture', 'Infrastructure'], stage: 'GROWING' },
+  { skill: 'Cybersecurity for OT Systems', growth: 119, sectors: ['Manufacturing', 'Energy', 'IT'], stage: 'EMERGING' },
+];
+
+export const mockRecommendations = [
+  {
+    id: 'r1',
+    type: 'INCREASE',
+    priority: 'CRITICAL',
+    district: 'Hosur/Krishnagiri',
+    occupation: 'EV Technician',
+    gap: 1970,
+    confidence: 86,
+    action: 'Increase EV Technician training capacity by 800 seats',
+    evidence: [
+      'Vacancy demand increased 31% in last 2 quarters',
+      '42 employers posted EV-related roles in district',
+      'Only 28% of projected demand is covered by existing capacity',
+      'Adjacent workforce of 2,100 automobile mechanics available',
+      'Industrial activity increasing - 3 new EV assembly plants announced',
+    ],
+    costEstimate: 2400000,
+    impactScore: 94,
+    shortcutAction: 'Reskill 1,200 automobile mechanics via 3-month bridge program',
+  },
+  {
+    id: 'r2',
+    type: 'RESKILL',
+    priority: 'HIGH',
+    district: 'Coimbatore',
+    occupation: 'Solar PV Technician',
+    gap: 2840,
+    confidence: 91,
+    action: 'Deploy bridge reskilling program for electricians → Solar PV',
+    evidence: [
+      'District has 4,200 underemployed electricians',
+      'Solar demand grew 24% last quarter',
+      'Bridge program requires only 6 weeks vs 6-month full training',
+      'Cost per worker 60% lower than fresh training',
+      '18 solar developers confirmed hiring intent',
+    ],
+    costEstimate: 1800000,
+    impactScore: 88,
+    shortcutAction: 'Convert 1,500 electricians to Solar PV in 8 weeks',
+  },
+  {
+    id: 'r3',
+    type: 'RELOCATE',
+    priority: 'HIGH',
+    district: 'Chennai → Hosur',
+    occupation: 'CNC Operator Training Capacity',
+    gap: 2200,
+    confidence: 82,
+    action: 'Relocate 40% of Chennai CNC training capacity to Hosur district',
+    evidence: [
+      'Chennai CNC centres at 45% utilization',
+      'Hosur manufacturing cluster expanding rapidly',
+      'Relocation cost lower than new centre establishment',
+      'Demand-supply imbalance identified 8 months ago',
+    ],
+    costEstimate: 900000,
+    impactScore: 76,
+    shortcutAction: 'Move 2 training centres to Hosur industrial area',
+  },
+  {
+    id: 'r4',
+    type: 'REDUCE',
+    priority: 'MEDIUM',
+    district: 'Tiruchirappalli',
+    occupation: 'Data Entry Operator',
+    gap: -2400,
+    confidence: 92,
+    action: 'Reduce Data Entry training by 60%, redirect to Data Analytics',
+    evidence: [
+      'Persistent oversupply for 6+ quarters',
+      'Placement rate dropped to 23%',
+      'AI automation reducing demand structurally',
+      'Strong local demand for Data Analytics (adjacent skill)',
+    ],
+    costEstimate: 0,
+    impactScore: 71,
+    shortcutAction: 'Convert 3 data entry programmes to data analytics',
+  },
+];
+
+export const mockTrainingCentres = [
+  { id: 'tc1', name: 'NSDC Coimbatore Hub', district: 'Coimbatore', capacity: 1200, enrollment: 980, sectors: ['Manufacturing', 'Renewable Energy'], utilization: 82, placement: 74 },
+  { id: 'tc2', name: 'Skill India Chennai Centre', district: 'Chennai', capacity: 2400, enrollment: 1080, sectors: ['IT/Digital', 'Manufacturing'], utilization: 45, placement: 68 },
+  { id: 'tc3', name: 'ITI Hosur', district: 'Hosur', capacity: 600, enrollment: 591, sectors: ['Automotive', 'Manufacturing'], utilization: 98, placement: 81 },
+  { id: 'tc4', name: 'PMKVY Madurai', district: 'Madurai', capacity: 800, enrollment: 620, sectors: ['Textiles', 'Food Processing'], utilization: 78, placement: 69 },
+  { id: 'tc5', name: 'SSC Bengaluru Tech Centre', district: 'Bengaluru', capacity: 3200, enrollment: 2890, sectors: ['IT/Digital', 'Electronics'], utilization: 90, placement: 79 },
+  { id: 'tc6', name: 'ITI Pune Industrial', district: 'Pune', capacity: 1800, enrollment: 1620, sectors: ['Automotive', 'Manufacturing'], utilization: 90, placement: 76 },
+];
+
+export const mockPolicySimulations = {
+  baseline: {
+    label: 'Current Policy',
+    gap: 29000,
+    placement: 68,
+    utilization: 74,
+    cost: 0,
+  },
+  scenario1: {
+    label: '+20% EV Seats',
+    gap: 24000,
+    placement: 72,
+    utilization: 79,
+    cost: 15000000,
+    gapReduction: 17.2,
+  },
+  scenario2: {
+    label: 'Reskill Adjacent Workers',
+    gap: 20500,
+    placement: 76,
+    utilization: 82,
+    cost: 8000000,
+    gapReduction: 29.3,
+  },
+  scenario3: {
+    label: 'Relocate + Reskill',
+    gap: 17000,
+    placement: 79,
+    utilization: 86,
+    cost: 12000000,
+    gapReduction: 41.4,
+  },
+};
+
+export const mockEarlyWarnings = [
+  {
+    id: 'ew1',
+    severity: 'CRITICAL',
+    district: 'Hosur/Krishnagiri',
+    occupation: 'EV Technician',
+    stage: 5,
+    daysUntilCritical: 0,
+    message: 'Critical shortage detected. Immediate intervention required.',
+    trend: 'demand +31%, supply +9%',
+  },
+  {
+    id: 'ew2',
+    severity: 'HIGH',
+    district: 'Tamil Nadu (State)',
+    occupation: 'Solar PV Technician',
+    stage: 4,
+    daysUntilCritical: 47,
+    message: 'Forecast indicates shortage in 47 days.',
+    trend: 'demand +24%, capacity unchanged',
+  },
+  {
+    id: 'ew3',
+    severity: 'HIGH',
+    district: 'Bengaluru',
+    occupation: 'AI/ML Engineer',
+    stage: 4,
+    daysUntilCritical: 62,
+    message: 'High-skill gap widening. Training lead time insufficient.',
+    trend: 'demand +28%, institutional supply flat',
+  },
+  {
+    id: 'ew4',
+    severity: 'MEDIUM',
+    district: 'Tirunelveli',
+    occupation: 'Wind Turbine Technician',
+    stage: 3,
+    daysUntilCritical: 124,
+    message: 'Supply-demand gap widening steadily.',
+    trend: 'demand +19%, supply +6%',
+  },
+  {
+    id: 'ew5',
+    severity: 'LOW',
+    district: 'Tiruchirappalli',
+    occupation: 'Data Entry Operator',
+    stage: 2,
+    daysUntilCritical: null,
+    message: 'Persistent oversaturation risk.',
+    trend: 'demand -12%, supply flat',
+  },
+];
+
+export const mockMigrationCorridors = [
+  { from: 'Tirunelveli', to: 'Chennai', skill: 'Electrician', workers: 2400, trend: 'INCREASING' },
+  { from: 'Madurai', to: 'Bengaluru', skill: 'Manufacturing', workers: 1800, trend: 'STABLE' },
+  { from: 'Coimbatore', to: 'Pune', skill: 'CNC Operator', workers: 1200, trend: 'INCREASING' },
+  { from: 'Mysuru', to: 'Bengaluru', skill: 'IT/Software', workers: 3400, trend: 'STABLE' },
+  { from: 'Nagpur', to: 'Mumbai', skill: 'Construction', workers: 2100, trend: 'DECREASING' },
+];
+
+export const mockCurriculumDrift = [
+  {
+    qualification: 'Solar PV Technician - QP/NOS 2023',
+    driftScore: 78,
+    missingSkills: ['Battery Storage Integration', 'IoT Monitoring Systems', 'Smart Grid Interface'],
+    emergingDemand: ['Solar+Storage', 'Remote Monitoring', 'AI-Assisted Diagnostics'],
+    lastUpdated: '2023-04',
+    urgency: 'HIGH',
+  },
+  {
+    qualification: 'EV Technician - QP/NOS 2022',
+    driftScore: 64,
+    missingSkills: ['Advanced BMS', 'Fast Charging Infrastructure', 'V2G Technology'],
+    emergingDemand: ['Battery Swapping', 'Fleet Management Systems', 'Wireless Charging'],
+    lastUpdated: '2022-08',
+    urgency: 'CRITICAL',
+  },
+  {
+    qualification: 'Industrial Electrician - QP/NOS 2021',
+    driftScore: 42,
+    missingSkills: ['PLC Programming', 'Predictive Maintenance'],
+    emergingDemand: ['Industry 4.0 Integration', 'Digital Diagnostics'],
+    lastUpdated: '2021-03',
+    urgency: 'MEDIUM',
+  },
+];

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(99, 102, 241, 0.3);
+    border-radius: 3px;
+  }
+  
+  html {
+    @apply bg-surface-900 text-white;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-surface-900 text-gray-100;
+    background-image: 
+      radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 10%, rgba(99, 102, 241, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface-800/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-card;
+  }
+  
+  .glass-card-hover {
+    @apply glass-card hover:bg-surface-700/60 hover:border-white/20 hover:shadow-card-hover transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500 text-white font-semibold px-6 py-2.5 rounded-xl 
+           transition-all duration-200 hover:shadow-glow-primary hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface-600/50 hover:bg-surface-500/50 text-gray-200 font-medium px-6 py-2.5 rounded-xl 
+           border border-white/10 hover:border-white/20 transition-all duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-500 text-white font-semibold px-6 py-2.5 rounded-xl 
+           transition-all duration-200 hover:shadow-glow-accent hover:scale-105 active:scale-95;
+  }
+  
+  .btn-danger {
+    @apply bg-danger-600 hover:bg-danger-500 text-white font-semibold px-6 py-2.5 rounded-xl 
+           transition-all duration-200 hover:shadow-glow-danger hover:scale-105 active:scale-95;
+  }
+  
+  .metric-card {
+    @apply glass-card p-6 relative overflow-hidden;
+  }
+  
+  .metric-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary-600/5 to-transparent pointer-events-none;
+  }
+  
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+  
+  .badge-danger {
+    @apply badge bg-danger-500/20 text-danger-400 border border-danger-500/30;
+  }
+  
+  .badge-warning {
+    @apply badge bg-warning-500/20 text-warning-400 border border-warning-500/30;
+  }
+  
+  .badge-success {
+    @apply badge bg-success-500/20 text-success-400 border border-success-500/30;
+  }
+  
+  .badge-primary {
+    @apply badge bg-primary-500/20 text-primary-400 border border-primary-500/30;
+  }
+  
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-surface-600/50
+           transition-all duration-200 cursor-pointer font-medium text-sm;
+  }
+  
+  .nav-item-active {
+    @apply nav-item bg-primary-600/20 text-primary-400 border border-primary-500/30;
+  }
+  
+  .input-field {
+    @apply bg-surface-700/50 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-gray-500
+           focus:outline-none focus:border-primary-500/50 focus:ring-2 focus:ring-primary-500/20
+           transition-all duration-200 w-full;
+  }
+  
+  .select-field {
+    @apply input-field cursor-pointer;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-white;
+  }
+  
+  .section-subtitle {
+    @apply text-gray-400 text-sm mt-1;
+  }
+  
+  .divider {
+    @apply border-t border-white/5;
+  }
+  
+  .table-header {
+    @apply text-xs text-gray-500 uppercase tracking-wider font-semibold;
+  }
+  
+  .table-cell {
+    @apply text-sm text-gray-300 py-3;
+  }
+  
+  .risk-badge-high {
+    @apply badge-danger;
+  }
+  
+  .risk-badge-medium {
+    @apply badge-warning;
+  }
+  
+  .risk-badge-low {
+    @apply badge-success;
+  }
+
+  .shimmer-effect {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+    background-size: 1000px 100%;
+    animation: shimmer 2s linear infinite;
+  }
+  
+  .glow-dot {
+    @apply w-2 h-2 rounded-full animate-pulse;
+  }
+  
+  .progress-bar {
+    @apply h-2 rounded-full bg-surface-600 overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-700;
+  }
+  
+  .tooltip {
+    @apply absolute z-50 bg-surface-700 border border-white/10 text-white text-xs rounded-lg px-3 py-2 
+           shadow-xl pointer-events-none;
+  }
+  
+  .stat-number {
+    @apply text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-primary {
+    @apply bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-accent {
+    @apply bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent;
+  }
+  
+  .page-header {
+    @apply mb-8;
+  }
+  
+  .card-icon {
+    @apply w-10 h-10 rounded-xl flex items-center justify-center text-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  
+  .border-gradient {
+    border-image: linear-gradient(135deg, rgba(99,102,241,0.5), rgba(249,115,22,0.3)) 1;
+  }
+}
+
+/* Map styles */
+.leaflet-container {
+  background: #0a0e1a !important;
+  border-radius: 1rem;
+}
+
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.8) saturate(0.6);
+}
+
+/* Custom chart styles */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #141c36 !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 12px !important;
+}
+
+/* Animations */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* Glow effects */
+.glow-primary { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); }
+.glow-accent { box-shadow: 0 0 20px rgba(249, 115, 22, 0.4); }
+.glow-success { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+.glow-danger { box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }

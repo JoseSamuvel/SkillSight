@@ -1,0 +1,24 @@
+{
+  "name": "kaushallens-backend",
+  "version": "1.0.0",
+  "description": "KaushalLens AI - Labour Market Intelligence Backend API",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/db/seed.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  },
+  "keywords": ["kaushallens", "skill-gap", "labour-market", "india", "msde"],
+  "author": "KaushalLens Team",
+  "license": "MIT"
+}
