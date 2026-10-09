@@ -1,4 +1,4 @@
-// Mock data for KaushalLens AI - Labour Market Intelligence Platform
+// Mock data for SkillSight - Labour Market Intelligence Platform
 
 export const mockDistricts = [
   { id: 'd1', name: 'Coimbatore', state: 'Tamil Nadu', lat: 11.0168, lng: 76.9558, healthScore: 72, demandGrowth: 18, supplyGrowth: 7, riskLevel: 'HIGH', workforce: 850000 },

@@ -126,7 +126,7 @@ The platform flags these occupations for training reduction reviews.`,
   return {
     id: Date.now().toString(),
     role: 'assistant',
-    content: `I've analysed this query using the KaushalLens intelligence layer — combining NCS vacancy data, PLFS workforce baseline, e-Shram occupational stock, and industry economic signals.
+    content: `I've analysed this query using the SkillSight intelligence layer — combining NCS vacancy data, PLFS workforce baseline, e-Shram occupational stock, and industry economic signals.
 
 For more specific insights, try asking about:
 - A specific district + occupation combination
@@ -146,7 +146,7 @@ export default function AIAnalyst() {
     {
       id: '0',
       role: 'assistant',
-      content: `Welcome to **KaushalLens AI Analyst** — your evidence-based labour market intelligence interface.
+      content: `Welcome to **SkillSight AI Analyst** — your evidence-based labour market intelligence interface.
 
 I retrieve insights from structured labour market data (NCS, PLFS, e-Shram, industry signals) rather than generating unconstrained answers. Every recommendation includes source evidence and confidence scores.
 

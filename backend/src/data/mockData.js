@@ -1,4 +1,4 @@
-// Mock data service for KaushalLens Backend
+// Mock data service for SkillSight Backend
 // In production, this connects to Supabase PostgreSQL
 
 export const DISTRICTS = [

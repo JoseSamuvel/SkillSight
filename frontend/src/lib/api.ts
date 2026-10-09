@@ -1,4 +1,4 @@
-// KaushalLens Unified API Client
+// SkillSight Unified API Client
 // Talks to backend Express API (/api/...) with seamless mockData fallbacks
 
 import {

@@ -1,7 +1,7 @@
 {
-  "name": "kaushallens-backend",
+  "name": "skillsight-backend",
   "version": "1.0.0",
-  "description": "KaushalLens AI - Labour Market Intelligence Backend API",
+  "description": "SkillSight - Labour Market Intelligence Backend API",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -18,7 +18,7 @@
     "helmet": "^8.0.0",
     "morgan": "^1.10.0"
   },
-  "keywords": ["kaushallens", "skill-gap", "labour-market", "india", "msde"],
-  "author": "KaushalLens Team",
+  "keywords": ["skillsight", "skill-gap", "labour-market", "india", "msde"],
+  "author": "SkillSight Team",
   "license": "MIT"
 }

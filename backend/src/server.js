@@ -63,7 +63,7 @@ app.use('/api/ai-analyst', aiAnalystRouter)
 app.get('/health', (req, res) => {
   res.json({
     status: 'OK',
-    service: 'KaushalLens AI Backend',
+    service: 'SkillSight Backend',
     version: '2.0.0',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
@@ -74,7 +74,7 @@ app.get('/health', (req, res) => {
 // ─── API Info ─────────────────────────────────────────────────────────────────
 app.get('/api', (req, res) => {
   res.json({
-    name: 'KaushalLens AI API',
+    name: 'SkillSight API',
     version: '2.0.0',
     description: 'Labour Market Intelligence & Skill Demand-Supply Forecasting Engine',
     endpoints: {
@@ -109,7 +109,7 @@ app.use((req, res) => {
 
 // ─── Start ────────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🚀 KaushalLens AI Backend running on port ${PORT}`)
+  console.log(`\n🚀 SkillSight Backend running on port ${PORT}`)
   console.log(`📊 API: http://localhost:${PORT}/api`)
   console.log(`🏥 Health: http://localhost:${PORT}/health\n`)
 })

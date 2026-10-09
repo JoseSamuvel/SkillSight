@@ -1,4 +1,4 @@
-# KaushalLens AI
+# SkillSight
 
 > **SIH26246: Labour Market Intelligence & Skill Demand-Supply Forecasting Engine**  
 > *A Policy Decision Engine for India's Skilling Ecosystem*
@@ -6,9 +6,9 @@
 ---
 
 ## 🎯 Executive Summary
-**KaushalLens AI** is a decision-intelligence platform that continuously fuses labour-market demand, workforce supply, training capacity, industry signals, and economic indicators to forecast district-level skill shortages or saturation, quantify confidence, and recommend exactly where government bodies (MSDE, NCVET, State Skill Missions, NSDC) should increase, reduce, relocate, or redesign training capacity.
+**SkillSight** is a decision-intelligence platform that continuously fuses labour-market demand, workforce supply, training capacity, industry signals, and economic indicators to forecast district-level skill shortages or saturation, quantify confidence, and recommend exactly where government bodies (MSDE, NCVET, State Skill Missions, NSDC) should increase, reduce, relocate, or redesign training capacity.
 
-### What Makes KaushalLens Distinct
+### What Makes SkillSight Distinct
 - ❌ Not another generic job portal
 - ❌ Not another static dashboard
 - ❌ Not another generic ML model

@@ -1,4 +1,4 @@
-// KaushalLens Database Seed Script
+// SkillSight Database Seed Script
 // Seeds districts, occupations, skill gaps, early warnings, and training centres
 // Can run locally or seed remote PostgreSQL/Supabase database
 
@@ -17,7 +17,7 @@ import {
 dotenv.config()
 
 async function seed() {
-  console.log('🌱 Starting KaushalLens database seed process...')
+  console.log('🌱 Starting SkillSight database seed process...')
   console.log(`📍 Districts to seed: ${DISTRICTS.length}`)
   console.log(`🔧 Occupations to seed: ${OCCUPATIONS.length}`)
   console.log(`⚠️  Early Warnings to seed: ${EARLY_WARNINGS.length}`)

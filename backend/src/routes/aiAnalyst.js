@@ -73,7 +73,7 @@ router.post('/query', (req, res) => {
       ]
       confidence = 95
     } else {
-      responseText = `KaushalLens Intelligence Synthesis:\n\nSynthesizing live data across **724 districts**, **28 States**, and **10 key high-growth industrial sectors**.\n\nCurrent national metrics identify a **2.8 Million worker skill shortage** concentrated primarily in Green Energy, EV Systems, Precision CNC, and Applied AI, balanced against an estimated **1.4 Million oversupply** in legacy clerical, repetitive manual assembly, and outdated trade programs.\n\nYou can query specific districts (e.g. *"Show me shortages in Hosur or Coimbatore"*), specific sectors (*"What is the status of Solar PV?"*), or simulation scenarios (*"How should we reallocate Rs. 50 Lakhs training budget?"*).`
+      responseText = `SkillSight Intelligence Synthesis:\n\nSynthesizing live data across **724 districts**, **28 States**, and **10 key high-growth industrial sectors**.\n\nCurrent national metrics identify a **2.8 Million worker skill shortage** concentrated primarily in Green Energy, EV Systems, Precision CNC, and Applied AI, balanced against an estimated **1.4 Million oversupply** in legacy clerical, repetitive manual assembly, and outdated trade programs.\n\nYou can query specific districts (e.g. *"Show me shortages in Hosur or Coimbatore"*), specific sectors (*"What is the status of Solar PV?"*), or simulation scenarios (*"How should we reallocate Rs. 50 Lakhs training budget?"*).`
       citations = [
         'NCS Job Exchange Vacancy Index',
         'Periodic Labour Force Survey (PLFS)',

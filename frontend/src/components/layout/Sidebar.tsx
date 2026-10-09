@@ -34,7 +34,7 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
         </div>
         {!collapsed && (
           <div className="animate-fade-in">
-            <div className="font-bold text-white text-sm leading-tight">KaushalLens</div>
+            <div className="font-bold text-white text-sm leading-tight">SkillSight</div>
             <div className="text-xs text-primary-400 font-medium">AI Labour Intelligence</div>
           </div>
         )}

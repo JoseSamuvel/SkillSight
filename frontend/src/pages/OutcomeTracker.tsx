@@ -116,7 +116,7 @@ export default function OutcomeTracker() {
         <div className="mt-4 p-3 bg-surface-700/30 rounded-xl text-xs text-gray-400">
           <Info className="w-3 h-3 text-primary-400 inline mr-1.5" />
           When actual outcomes differ from predictions, the system updates model weights — improving future forecast accuracy.
-          This is what separates KaushalLens from a static dashboard.
+          This is what separates SkillSight from a static dashboard.
         </div>
       </div>
 
