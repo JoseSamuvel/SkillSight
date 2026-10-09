@@ -83,8 +83,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/JoseSamuvel/KaushalLens-AI.git
-cd KaushalLens-AI
+git clone https://github.com/JoseSamuvel/SkillSight.git
+cd SkillSight
 ```
 
 ### 2. Run the Backend API
