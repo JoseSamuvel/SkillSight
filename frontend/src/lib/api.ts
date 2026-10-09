@@ -73,7 +73,10 @@ export const api = {
   // Forecast
   async getForecast(occupationId?: string, horizon = '4Q') {
     try {
-      const res = await fetch(`${API_BASE}/forecast?horizon=${horizon}`)
+      const url = occupationId
+        ? `${API_BASE}/forecast?occupation_id=${encodeURIComponent(occupationId)}&horizon=${horizon}`
+        : `${API_BASE}/forecast?horizon=${horizon}`
+      const res = await fetch(url)
       if (!res.ok) throw new Error('Network error')
       const json = await res.json()
       return json.data

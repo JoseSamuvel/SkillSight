@@ -4,12 +4,12 @@ import {
   CheckCircle2, Brain, BarChart2
 } from 'lucide-react'
 import {
-  AreaChart, Area, LineChart, Line, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, Legend, ReferenceLine, ReferenceArea
+  AreaChart, Area, XAxis, YAxis, CartesianGrid,
+  Tooltip, ResponsiveContainer, ReferenceLine
 } from 'recharts'
-import { mockForecastData, mockOccupations, mockDistricts } from '../lib/mockData'
+import { mockOccupations, mockDistricts } from '../lib/mockData'
 
-const generateForecastDetail = (occupation: string) => {
+const generateForecastDetail = (_occupation: string) => {
   const base = Math.floor(Math.random() * 3000) + 2000
   return Array.from({ length: 12 }, (_, i) => ({
     period: `Q${(i % 4) + 1} ${2025 + Math.floor(i / 4)}`,

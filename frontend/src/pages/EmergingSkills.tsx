@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Sparkles, TrendingUp, Layers, Globe, ChevronRight, ArrowUpRight, Zap } from 'lucide-react'
+import { Sparkles, Globe, ChevronRight, ArrowUpRight } from 'lucide-react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts'
 import { mockSkillEmergingData } from '../lib/mockData'
 

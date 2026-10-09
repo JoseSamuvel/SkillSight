@@ -190,7 +190,7 @@ export default function Dashboard() {
               <XAxis dataKey="period" tick={{ fill: '#6b7280', fontSize: 10 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: '#6b7280', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v/1000).toFixed(0)}K`} />
               <Tooltip content={<CustomTooltip />} />
-              <Area type="monotone" dataKey="demand" name="Demand" stroke="#6366f1" strokeWidth={2} fill="url(#demandGrad)" strokeDasharray={(d: any) => d.forecast ? '5 5' : '0'} />
+              <Area type="monotone" dataKey="demand" name="Demand" stroke="#6366f1" strokeWidth={2} fill="url(#demandGrad)" />
               <Area type="monotone" dataKey="supply" name="Supply" stroke="#22c55e" strokeWidth={2} fill="url(#supplyGrad)" />
               <Area type="monotone" dataKey="gap" name="Gap" stroke="#ef4444" strokeWidth={2} fill="url(#gapGrad)" />
             </AreaChart>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, AlertTriangle, TrendingUp, RefreshCw, ArrowRight, Info } from 'lucide-react'
+import { BookOpen, AlertTriangle, TrendingUp, RefreshCw, ArrowRight } from 'lucide-react'
 import { mockCurriculumDrift } from '../lib/mockData'
 
 const urgencyConfig: Record<string, { color: string; bg: string; border: string }> = {

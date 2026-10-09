@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Bot, Send, User, Loader2, Database, TrendingUp, AlertTriangle, Info, Zap } from 'lucide-react'
-import { mockOccupations, mockDistricts, mockEarlyWarnings } from '../lib/mockData'
+import { Bot, Send, User, Loader2, Database, Info } from 'lucide-react'
 
 interface Message {
   id: string
